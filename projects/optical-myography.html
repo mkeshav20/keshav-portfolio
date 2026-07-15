@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markerless Optical Myography — Keshav Mittal</title>
+<meta name="description" content="Non-contact bionic control of multiple degrees of freedom">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="grid-overlay"></div>
+<div class="scanline"></div>
+
+<header class="nav" id="nav">
+  <a href="../index.html" class="brand">
+    <span class="brand-mark">KM</span>
+    <span class="brand-txt">KESHAV&nbsp;MITTAL<em>// BIOMEDICAL ENGINEER</em></span>
+  </a>
+  <a class="nav-cta" href="../index.html#projects">◄ ALL PROJECTS</a>
+</header>
+
+<main class="pd">
+  <a class="pd-back" href="../index.html#projects">← Back to portfolio</a>
+  <section class="pd-hero">
+    <span class="pd-id">P-02 · PUBLISHED</span>
+    <h1>Markerless <span class="g">Optical Myography</span></h1>
+    <p class="pd-tag">Non-contact bionic control of multiple degrees of freedom</p>
+    <div class="pd-lead cover" style="aspect-ratio:16/10;max-height:600px"><img src="../assets/img/omg_setup_photo.jpg" alt="Markerless optical myography experimental rig — camera, lighting and gesture prompt"></div>
+  </section>
+
+  <div class="pd-ps">
+    <div class="ps problem"><h5>◇ PROBLEM</h5><p>EMG electrodes for prosthetic control need skin contact, conductive gel and precise placement, and they <strong>degrade with sweat, shift and motion</strong> — which limits reliable control of multiple degrees of freedom.</p></div>
+    <div class="ps solution"><h5>◈ SOLUTION</h5><p>A <strong>markerless, non-contact optical myography</strong> approach that reads muscle-surface deformation with a camera and decodes intended movement with machine learning — no electrodes, no gel, no fixed markers.</p></div>
+  </div>
+
+  <section class="pd-sec"><h2>OVERVIEW</h2><p>The system observes the optical signature of contracting muscle and maps it to intended motion, replacing the electrode interface with a vision sensor. I contributed to the machine-learning strategy, prototyping, experimentation and model evaluation.</p><p>On control-related classification tasks the approach reached roughly ninety-five percent accuracy across multiple degrees of freedom, supporting its promise as a robust, contact-free front end for bionic and prosthetic control.</p></section>
+  <section class="pd-sec"><h2>KEY POINTS</h2><ul class="pd-highlights"><li>Contact-free interface — no electrodes, gel or skin markers.</li><li>Decodes multiple degrees of freedom for bionic control.</li><li>High classification accuracy on control-related tasks.</li><li>Contributed ML strategy, prototyping and model evaluation.</li></ul></section>
+  <section class="pd-sec"><h2>GALLERY</h2><div class="pd-grid"><figure class="pd-fig" data-full="../assets/img/omg_accuracy.jpg"><div class="pf-media"><img src="../assets/img/omg_accuracy.jpg" alt="Cross-validation accuracy across classifiers" loading="lazy"></div><figcaption>Cross-validation accuracy across classifiers</figcaption></figure><figure class="pd-fig" data-full="../assets/img/omg_confusion.jpg"><div class="pf-media"><img src="../assets/img/omg_confusion.jpg" alt="kNN confusion matrices by camera orientation" loading="lazy"></div><figcaption>kNN confusion matrices by camera orientation</figcaption></figure></div></section>
+  
+  <section class="pd-sec"><h2>STACK &amp; TOOLS</h2><div class="pd-tools"><span>Computer Vision</span><span>Machine Learning</span><span>Python</span><span>Signal Processing</span><span>Prosthetic Control</span></div></section>
+  <p class="pd-note">◆ Publication (2024): “Towards Markerless, Non-Contact Optical Myography for Prosthetic Control of Multiple Degrees-of-Freedom.” · IIT Delhi, RISE Lab.</p>
+
+  <div class="pd-nav">
+    <a class="btn btn-ghost" href="../index.html#projects">← All projects</a>
+    <a class="btn btn-primary" href="../index.html#contact">Get in touch →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© <span id="yr"></span> KESHAV MITTAL</span>
+  <span class="foot-mid">// MARKERLESS OPTICAL MYOGRAPHY</span>
+  <span class="foot-blink">◉ SYSTEM NOMINAL</span>
+</footer>
+
+<div class="lightbox" id="lightbox"><span class="lb-close"

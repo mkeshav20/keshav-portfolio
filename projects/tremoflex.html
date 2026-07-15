@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TremoFlex — Keshav Mittal</title>
+<meta name="description" content="Tremor-reducing wearable assistive glove">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="grid-overlay"></div>
+<div class="scanline"></div>
+
+<header class="nav" id="nav">
+  <a href="../index.html" class="brand">
+    <span class="brand-mark">KM</span>
+    <span class="brand-txt">KESHAV&nbsp;MITTAL<em>// BIOMEDICAL ENGINEER</em></span>
+  </a>
+  <a class="nav-cta" href="../index.html#projects">◄ ALL PROJECTS</a>
+</header>
+
+<main class="pd">
+  <a class="pd-back" href="../index.html#projects">← Back to portfolio</a>
+  <section class="pd-hero">
+    <span class="pd-id">P-04 · CONCEPT · PROTOTYPE</span>
+    <h1><span class="g">TremoFlex</span></h1>
+    <p class="pd-tag">Tremor-reducing wearable assistive glove</p>
+    <div class="pd-lead cover"><img src="../assets/img/tremoflex_device.jpg" alt="TremoFlex"></div>
+  </section>
+
+  <div class="pd-ps">
+    <div class="ps problem"><h5>◇ PROBLEM</h5><p>Essential tremor and osteoarthritis rob people of fine motor control for everyday tasks like writing, eating and holding a cup. Medication has side effects, and existing stabilisers are <strong>bulky, powered and expensive</strong>.</p></div>
+    <div class="ps solution"><h5>◈ SOLUTION</h5><p>A lightweight glove with a <strong>tuned mass damper</strong> that passively counteracts tremor frequencies — mechanically smoothing hand motion, with no drugs and no power-hungry actuators.</p></div>
+  </div>
+
+  <section class="pd-sec"><h2>OVERVIEW</h2><p>TremoFlex places a small mass-damper module on the back of the hand. When the hand tremors, the mass cube and helical isolator generate a counterforce, while linear springs absorb vibration toward the wrist — the net effect is a reduction in tremor frequency reaching the fingers.</p><p>The concept was developed into a physical prototype with a full CAD assembly and pitch deck, focused squarely on real user needs and daily-task performance for people with essential tremor or osteoarthritis.</p></section>
+  <section class="pd-sec"><h2>KEY POINTS</h2><ul class="pd-highlights"><li>Passive tuned-mass-damper stabilisation — no motors or batteries.</li><li>Targets fine-motor tasks: writing, eating, gripping.</li><li>Physical prototype + full CAD assembly.</li><li>Designed around essential tremor and osteoarthritis users.</li></ul></section>
+  <section class="pd-sec"><h2>GALLERY</h2><div class="pd-grid"><figure class="pd-fig" data-video="../assets/img/tremoflex.mp4"><div class="pf-media"><video autoplay muted loop playsinline poster="../assets/img/tremoflex_poster.jpg"><source src="../assets/img/tremoflex.mp4" type="video/mp4"></video></div><figcaption>CAD assembly animation</figcaption></figure><figure class="pd-fig" data-full="../assets/img/tremoflex_flow.jpg"><div class="pf-media"><img src="../assets/img/tremoflex_flow.jpg" alt="Working-principle flowchart" loading="lazy"></div><figcaption>Working-principle flowchart</figcaption></figure><figure class="pd-fig cover" data-full="../assets/img/tremoflex_device.jpg"><div class="pf-media"><img src="../assets/img/tremoflex_device.jpg" alt="Worn prototype detail" loading="lazy"></div><figcaption>Worn prototype detail</figcaption></figure></div></section>
+  <section class="pd-sec"><h2>STACK &amp; TOOLS</h2><div class="pd-tools"><span>Mechanical Design</span><span>Tuned Mass Damper</span><span>CAD</span><span>Rehab UX</span><span>Prototyping</span></div></section>
+  <p class="pd-note">◆ Physical prototype, pitch deck and CAD assembly developed for the concept.</p>
+
+  <div class="pd-nav">
+    <a class="btn btn-ghost" href="../index.html#projects">← All projects</a>
+    <a class="btn btn-primary" href="../index.html#contact">Get in touch →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© <span id="yr"></span> KESHAV MITTAL</span>
+  <span class="foot-mid">// TREMOFLEX</span>
+  <span class="foot-blink">◉ SYSTEM NOMINAL</span>
+</footer>
+
+<div class="lightbox" id="lightbox"><span class="lb-close">✕</span><div class="lb-body"></div></div>
+<script src="../js/main.js"></script>
+<script>
+(function(){var lb=document.getElementById('lightbox');var body=lb.querySelector('.lb-body');
+document.querySelectorAll('.pd-fig').forEach(function(f){f.addEventListener('click',function(){var img=f.getAttribute('data-full');var vid=f.getAttribute('data-video');if(vid){body.innerHTML='<video src="'+vid+'" controls autoplay loop playsinline></video>';}else if(img){body.innerHTML='<img alt="" src="'+img+'">';}else{return;}lb.classList.add('on');});});
+lb.addEventListener('click',function(e){if(e.target&&e.target.closest&&e.target.closest('video'))return;lb.classList.remove('on');body.in

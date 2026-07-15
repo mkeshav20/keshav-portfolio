@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passive Clutch &amp; Cable Routing — Keshav Mittal</title>
+<meta name="description" content="Posture-assist exo-mechanism for walking">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="grid-overlay"></div>
+<div class="scanline"></div>
+
+<header class="nav" id="nav">
+  <a href="../index.html" class="brand">
+    <span class="brand-mark">KM</span>
+    <span class="brand-txt">KESHAV&nbsp;MITTAL<em>// BIOMEDICAL ENGINEER</em></span>
+  </a>
+  <a class="nav-cta" href="../index.html#projects">◄ ALL PROJECTS</a>
+</header>
+
+<main class="pd">
+  <a class="pd-back" href="../index.html#projects">← Back to portfolio</a>
+  <section class="pd-hero">
+    <span class="pd-id">P-05 · PROTOTYPE · SIMULATION</span>
+    <h1>Passive <span class="g">Clutch</span> &amp; Cable Routing</h1>
+    <p class="pd-tag">Posture-assist exo-mechanism for walking</p>
+    <div class="pd-lead"><img src="../assets/img/clutch_cad.jpg" alt="Passive Clutch &amp; Cable Routing"></div>
+  </section>
+
+  <div class="pd-ps">
+    <div class="ps problem"><h5>◇ PROBLEM</h5><p>Powered exoskeletons that assist gait and posture are <strong>heavy, costly and battery-limited</strong>, which keeps mobility assistance out of reach for everyday rehabilitation use.</p></div>
+    <div class="ps solution"><h5>◈ SOLUTION</h5><p>A <strong>passive clutch and cable-routing</strong> mechanism — a pelvis brace clutch, thigh brace and posterior spring — that stores and releases energy at the right phase of the gait cycle to assist posture <strong>without motors</strong>, validated in OpenSim across loaded and unloaded walking.</p></div>
+  </div>
+
+  <section class="pd-sec"><h2>OVERVIEW</h2><p>The mechanism routes a cable through a clutch mounted on a pelvis brace, coupling to a thigh brace and a posterior spring. Timed to the gait cycle, it stores energy and returns it as posture assistance — delivering support with no actuators, motors or batteries.</p><p>I focused on the mechanical design, movement assistance and cable-path optimisation, then validated the concept in OpenSim with inverse kinematics and CMC / static optimisation. Gait testing showed the suited knee-flexion profile tracking the baseline closely while redistributing load — evidence the passive assist works without disrupting natural walking.</p></section>
+  <section class="pd-sec"><h2>KEY POINTS</h2><ul class="pd-highlights"><li>Fully passive — pelvis clutch, thigh brace, posterior spring.</li><li>Energy stored and released in phase with the gait cycle.</li><li>OpenSim validation: IK + CMC / static optimisation, loaded vs unloaded.</li><li>Suited knee-flexion tracks baseline while redistributing load.</li></ul></section>
+  <section class="pd-sec"><h2>GALLERY</h2><div class="pd-grid"><figure class="pd-fig cover" data-full="../assets/img/clutch_device.jpg"><div class="pf-media"><img src="../assets/img/clutch_device.jpg" alt="Worn prototype — pelvis &amp;amp; thigh brace" loading="lazy"></div><figcaption>Worn prototype — pelvis &amp;amp; thigh brace</figcaption></figure><figure class="pd-fig" data-full="../assets/img/clutch_cad2.jpg"><div class="pf-media"><img src="../assets/img/clutch_cad2.jpg" alt="Assembled clutch mechanism (CAD)" loading="lazy"></div><figcaption>Assembled clutch mechanism (CAD)</figcaption></figure><figure class="pd-fig" data-full="../assets/img/clutch_knee.jpg"><div class="pf-media"><img src="../assets/img/clutch_knee.jpg" alt="Knee flexion: baseline vs suited" loading="lazy"></div><figcaption>Knee flexion: baseline vs suited</figcaption></figure><figure class="pd-fig" data-full="../assets/img/clutch_hip.jpg"><div class="pf-media"><img src="../assets/img/clutch_hip.jpg" alt="Hip angle: baseline vs suited" loading="lazy"></div><figcaption>Hip angle: baseline vs suited</figcaption></figure><figure class="pd-fig cover" data-full="../assets/img/clutch_test.jpg"><div class="pf-media"><img src="../assets/img/clutch_test.jpg" alt="Treadmill gait test" loading="lazy"></div><figcaption>Treadmill gait test</figcaption></figure><figure class="pd-fig" data-video="../assets/img/clutch.mp4"><div class="pf-media"><video autoplay muted loop playsinline poster="../assets/img/clutch_poster.jpg"><source src="../assets/img/clutch.mp4" type="video/mp4"></video></div><figcaption>Mechanism motion</figcaption></figure></div></section>
+  <section class="pd-sec"><h2>STACK &amp; TOOLS</h2><div class="pd-tools"><span>OpenSim</span><span>Biomechanics</span><span>Cable Routing</span><span>CAD</span><span>MATLAB</span><span>Gait Analysis</span></div></section>
+  <p class="pd-note">◆ Inverse kinematics + CMC / static optimization across load conditions.</p>
+
+  <div class="pd-nav">
+    <a class="btn btn-ghost" href="../index.html#projects">← All projects</a>
+    <a class="btn btn-primary" href="../index.html#contact">Get in touch →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© <span id="yr"></span> KESHAV MITTAL</span>
+  <span class="foot-mid">// PASSIVE CLUTCH &AMP; CABLE ROUTING</span>
+  <span class="foot-blink">◉ SYSTEM NOMINAL</span>
+</footer>
+
+<div class="lightbox" id="lightbox"><span class="lb-close">✕</span><div class="lb-body"></div></div>
+<script src="../js/main.js"></script>
+<script>
+(function(){var lb=document.getElementById('lightbox');var body=lb.querySelector('.lb-body');
+document.querySelectorAll('.pd-fig').forEach(function(f){f.addEventListener('click',function(){var img=f.getAttribute('data-full');var vid=f.getAttribute('data-video');if(vid){body.innerHTML='<video src="'+vid+'" controls autoplay loop playsinline></video>';}else if(img){body.innerHTML='<img alt="" src="'+img+'">';}else{return;}lb.classList.add('on');});});
+lb.addEventListener('click',function(e){if(e.target&&e.target.closest&&e.target.closest('video'))return;lb.classList.remove('on');body.inner

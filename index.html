@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Keshav Mittal — Biomedical Engineer</title>
+<meta name="description" content="Keshav Mittal — Biomedical Engineer. Prosthetic control, wearable biomedical sensing, rehabilitation technology and assistive device prototyping." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===== BOOT SEQUENCE ===== -->
+<div id="boot" class="boot">
+  <div class="boot-core">
+    <div class="reactor small"><span></span><span></span><span></span><i></i></div>
+    <div class="boot-log" id="bootLog"></div>
+  </div>
+</div>
+
+<!-- ===== BACKGROUND FX ===== -->
+<canvas id="fx"></canvas>
+<div class="grid-overlay"></div>
+<div class="scanline"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand">
+    <span class="brand-mark">KM</span>
+    <span class="brand-txt">KESHAV&nbsp;MITTAL<em>// BIOMEDICAL ENGINEER</em></span>
+  </a>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-hud">
+    <span class="hud-tag tl">◤ SYS.ONLINE</span>
+    <span class="hud-tag tr">LOC · AUSTRALIA ◥</span>
+    <span class="hud-tag bl">◣ UNSW · M.BIOMED.ENG</span>
+    <span class="hud-tag br">STATUS · BUILDING ◢</span>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="eyebrow"><i class="dot"></i> BIOMEDICAL ENGINEER · DEVICE DESIGNER</p>
+      <h1 class="hero-title">
+        <span class="line">ENGINEERING</span>
+        <span class="line accent">HUMAN-CENTERED</span>
+        <span class="line">MEDICAL DEVICES</span>
+      </h1>
+      <p class="hero-sub">
+        I build prosthetic control systems, wearable biosensors and rehabilitation
+        technology — turning biosignals and biomechanics into devices people can
+        actually wear, move with, and rely on.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">◈ ENTER THE LAB</a>
+        <button type="button" class="btn btn-ghost" id="contactBtn">INITIATE CONTACT →</button>
+        <button type="button" class="btn btn-voice" id="voiceBtn" aria-label="Play voice briefing"><span class="v-wave"><i></i><i></i><i></i><i></i></span><span class="v-label">VOICE BRIEFING</span></button>
+      </div>
+      <div class="hero-stats">
+        <div><b data-count="10">0</b><span>Core projects</span></div>
+        <div><b data-count="3">0</b><span>Research labs</span></div>
+        <div><b data-count="1">0</b><span>Publication</span></div>
+        <div><b data-count="4">0</b><span>Years research</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="reactor-frame">
+        <div class="reactor big">
+          <span></span><span></span><span></span><i></i>
+          <div class="reactor-photo"><img src="assets/img/profile.jpg" alt="Keshav Mittal" /></div>
+        </div>
+        <svg class="orbit-ring" viewBox="0 0 400 400">
+          <circle cx="200" cy="200" r="180" />
+          <circle cx="200" cy="200" r="150" class="dash" />
+        </svg>
+        <span class="chip c1">EMG</span>
+        <span class="chip c2">COMSOL</span>
+        <span class="chip c3">OpenSim</span>
+        <span class="chip c4">MATLAB</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ecg">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path class="ecg-path" d="M0,40 L200,40 L220,40 L235,15 L250,65 L265,40 L300,40 L500,40 L520,40 L535,12 L550,68 L565,40 L620,40 L820,40 L840,40 L855,15 L870,65 L885,40 L940,40 L1200,40" />
+    </svg>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="sec-head">
+    <span class="sec-index">01</span>
+    <h2>PROFILE // OPERATOR</h2>
+    <span class="sec-rule"></span>
+  </div>
+  <div class="about-grid">
+    <div class="panel about-bio">
+      <div class="panel-corners"></div>
+      <p>
+        I'm <strong>Keshav Mittal</strong>, a Biomedical Engineering postgraduate at
+        <strong>UNSW Sydney</strong> with hands-on experience across prosthetic control,
+        wearable biomedical sensing, rehabilitation technology and assistive-device
+        prototyping. My background bridges biotechnology and engineering — I completed a
+        B.Tech in Biotechnology (First Class with Distinction, CGPA 9.29/10) before moving
+        deeper into hardware, signals and simulation.
+      </p>
+      <p>
+        My work sits at the intersection of the human body and the machines that help it.
+        I like problems where a signal has to become a decision, and a decision has to
+        become motion — prosthetic fit, EMG-driven control, tremor stabilization,
+        sign-to-speech translation. I prototype with real sensors and validate with real
+        simulation.
+      </p>
+      <div class="focus-tags">
+        <span>Prosthetics</span><span>Wearable Sensing</span><span>Rehabilitation</span>
+        <span>Biomechanics</span><span>Biosignal Processing</span><span>Medical Devices</span>
+      </div>
+    </div>
+    <div class="panel about-meta">
+      <div class="panel-corners"></div>
+      <ul class="specsheet">
+        <li><span>DESIGNATION</span><b>Biomedical Engineer</b></li>
+        <li><span>BASE</span><b>Australia</b></li>
+        <li><span>PROGRAM</span><b>M. Biomed. Eng · UNSW</b></li>
+        <li><span>TIMELINE</span><b>Feb 2025 – May 2027</b></li>
+        <li><span>PRIOR</span><b>B.Tech Biotech · 9.29 CGPA</b></li>
+        <li><span>FOCUS</span><b>Prosthetics · Assistive Tech</b></li>
+      </ul>
+      <a class="mini-cta" href="mailto:mkeshav014@gmail.com">◈ mkeshav014@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="sec-head">
+    <span class="sec-index">02</span>
+    <h2>PROJECTS // THE LAB</h2>
+    <span class="sec-rule"></span>
+  </div>
+  <p class="sec-lead">A working archive of devices, simulations and systems — each built to move a real problem forward.</p>
+
+  <div class="proj-filter">
+    <div class="proj-chips">
+      <button class="chip-btn active" data-filter="all">All</button>
+      <button class="chip-btn" data-filter="prosthetics">Prosthetics</button>
+      <button class="chip-btn" data-filter="wearables">Wearables</button>
+      <button class="chip-btn" data-filter="motion-capture">Motion Capture</button>
+      <button class="chip-btn" data-filter="simulation">Simulation</button>
+      <button class="chip-btn" data-filter="ml">Machine Learning</button>
+      <button class="chip-btn" data-filter="comsol">COMSOL</button>
+      <button class="chip-btn" data-filter="rehab">Rehab</button>
+    </div>
+    <label class="proj-search">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input type="text" id="projSearch" placeholder="search projects…" aria-label="Search projects" />
+    </label>
+    <div class="proj-count" id="projCount"></div>
+  </div>
+
+  <div class="projects">
+    <div class="proj-empty" id="projEmpty">No projects match — try another filter or search term.</div>
+
+    <!-- UniSense -->
+    <article class="proj feat reveal" data-tags="prosthetics wearables comsol">
+      <div class="panel-corners"></div>
+      <div class="proj-media contain">
+        <img src="assets/img/unisense_arm.png" alt="UniSense prosthetic socket on residual limb with sensor array" loading="lazy" />
+        <span class="media-tag">CONCEPT · SENSORISED SOCKET</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-top">
+          <span class="proj-id">P-01</span>
+          <span class="proj-status live">◉ ACTIVE · FLAGSHIP</span>
+        </div>
+        <h3>UniSense</h3>
+        <p class="proj-tagline">Dual-Mode Prosthetic Socket Mapping System</p>
+        <div class="proj-ps">
+          <div class="ps problem"><h5>◇ PROBLEM</h5><p>Prosthetic sockets are still fit by trial and error. Clinicians choose EMG control sites and manage pressure comfort separately — so a socket that <strong>controls well can still hurt</strong>, driving discomfort, tissue damage and device abandonment.</p></div>
+          <div class="ps solution"><h5>◈ SOLUTION</h5><p>A wearable that <strong>simultaneously maps EMG control quality and pressure/temperature comfort</strong> across the residual limb, scores every candidate site and recommends locations that are both controllable and comfortable — backed by MATLAB analysis and COMSOL field modelling.</p></div>
+        </div>
+        <p class="proj-desc">
+          The integrated map fuses control-site separability with comfort hotspots into a
+          single decision surface, so clinicians can pick electrode positions that maximise
+          signal <em>and</em> wearability instead of trading one for the other.
+        </p>
+        <div class="proj-gallery three">
+          <img src="assets/img/unisense_map.jpg" alt="UniSense integrated site map" loading="lazy" />
+          <img src="assets/img/unisense_calibration.jpg" alt="UniSense calibration &amp; gesture-prompt interface" loading="lazy" />
+          <img src="assets/img/unisense_circuit.jpg" alt="UniSense FSR + ESP32 sensor circuit" loading="lazy" />
+        </div>
+        <div class="proj-tools"><span>EMG</span><span>FSR Pressure</span><span>Thermistor</span><span>MATLAB</span><span>COMSOL</span><span>ESP32</span></div>
+        <p class="proj-note">◆ Presented at the Australasian Bioelectronics, Neurosensing &amp; Neuromodulation Symposium (ABNN) 2026.</p>
+      </div>
+    </article>
+
+    <div class="proj-row">
+
+      <!-- Optical Myography -->
+      <article class="proj reveal" data-tags="prosthetics ml">
+        <div class="panel-corners"></div>
+        <div class="proj-svg">
+          <svg viewBox="0 0 400 220" class="viz-omg">
+            <defs><linearGradient id="og" x1="0" x2="1"><stop offset="0" stop-color="#38e1ff"/><stop offset="1" stop-color="#ffd166"/></linearGradient></defs>
+            <g class="omg-mesh"></g>
+            <path class="omg-wave" d="M20,150 Q70,90 120,150 T220,150 T320,150 T400,150" fill="none" stroke="url(#og)" stroke-width="2"/>
+            <circle class="omg-scan" cx="40" cy="110" r="6"/>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-id">P-02</span><span class="proj-status">◉ PUBLISHED</span></div>
+          <h3>Markerless Optical Myography</h3>
+          <p class="proj-tagline">Non-contact bionic control · ~95% accuracy</p>
+          <div class="proj-ps">
+            <div class="ps problem"><h5>◇ PROBLEM</h5><p>EMG electrodes for prosthetic control need skin contact, gel and precise placement, and <strong>degrade with sweat and motion</strong> — limiting reliable multi-DOF control.</p></div>
+            <div class="ps solution"><h5>◈ SOLUTION</h5><p>A camera-based, <strong>markerless optical myography</strong> method that reads muscle-surface deformation without contact, feeding an ML classifier that decodes multiple degrees of freedom at ~95% accuracy.</p></div>
+          </div>
+          <div class="proj-tools"><span>Computer Vision</span><span>Machine Learning</span><span>Python</span><span>Signal Processing</span></div>
+          <p class="proj-note">◆ Publication (2024): “Towards Markerless, Non-Contact Optical Myography for Prosthetic Control of Multiple Degrees-of-Freedom.” · IIT Delhi, RISE Lab.</p>
+        </div>
+      </article>
+
+      <!-- UnMute -->
+      <article class="proj reveal" data-tags="wearables ml">
+        <div class="panel-corners"></div>
+        <div class="proj-svg">
+          <svg viewBox="0 0 400 220" class="viz-unmute">
+            <g class="hand-nodes">
+              <circle cx="120" cy="150" r="5"/><circle cx="150" cy="90" r="5"/>
+              <circle cx="190" cy="70" r="5"/><circle cx="230" cy="80" r="5"/>
+              <circle cx="265" cy="110" r="5"/>
+            </g>
+            <path class="hand-link" d="M120,150 L150,90 L190,70 L230,80 L265,110"/>
+            <g class="imu-rings">
+              <circle cx="150" cy="90" r="14"/><circle cx="190" cy="70" r="14"/><circle cx="230" cy="80" r="14"/>
+            </g>
+            <text x="300" y="150" class="voice-out">“HELLO”</text>
+            <path class="sound-wave" d="M285,150 q8,-14 16,0 t16,0"/>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-id">P-03</span><span class="proj-status live">◉ ONGOING</span></div>
+          <h3>UnMute</h3>
+          <p class="proj-tagline">Auslan-to-Voice assistive communication</p>
+          <div class="proj-ps">
+            <div class="ps problem"><h5>◇ PROBLEM</h5><p>Auslan users can't communicate with the vast majority who don't sign, and camera-based translators need line-of-sight and raise <strong>privacy concerns</strong>.</p></div>
+            <div class="ps solution"><h5>◈ SOLUTION</h5><p>Wearable <strong>IMU rings</strong> capture finger and hand motion directly; an ML model classifies signs and a TTS layer speaks them aloud in real time — no camera, works anywhere.</p></div>
+          </div>
+          <div class="proj-tools"><span>IMU Sensors</span><span>ESP32</span><span>Gesture ML</span><span>MATLAB</span><span>Real-time TTS</span></div>
+          <p class="proj-note">◆ Custom MATLAB pipeline: feature extraction → signing detector → Auslan classifier.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- TremoFlex feature -->
+    <article class="proj feat reveal" data-tags="wearables rehab">
+      <div class="panel-corners"></div>
+      <div class="proj-media contain">
+        <img src="assets/img/tremoflex_device.jpg" alt="TremoFlex wearable prototype on hand — tuned mass damper" loading="lazy" />
+        <span class="media-tag">DEVICE · WORN PROTOTYPE</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-top"><span class="proj-id">P-04</span><span class="proj-status">◉ CONCEPT · PROTOTYPE</span></div>
+        <h3>TremoFlex</h3>
+        <p class="proj-tagline">Tremor-Reducing Wearable Assistive Glove</p>
+        <div class="proj-ps">
+          <div class="ps problem"><h5>◇ PROBLEM</h5><p>Essential tremor and osteoarthritis rob people of fine motor control for everyday tasks. Medication has side effects, and existing stabilisers are <strong>bulky, powered and expensive</strong>.</p></div>
+          <div class="ps solution"><h5>◈ SOLUTION</h5><p>A lightweight glove with a <strong>tuned mass damper</strong> that passively counteracts tremor frequencies — mechanically smoothing hand motion for writing, eating and gripping, with no drugs and no power-hungry actuators.</p></div>
+        </div>
+        <div class="proj-gallery">
+          <video autoplay muted loop playsinline poster="assets/img/tremoflex_poster.jpg"><source src="assets/img/tremoflex.mp4" type="video/mp4" /></video>
+          <img src="assets/img/tremoflex_flow.jpg" alt="TremoFlex working principle flowchart" loading="lazy" />
+        </div>
+        <div class="proj-tools"><span>Mechanical Design</span><span>Tuned Mass Damper</span><span>CAD</span><span>Rehab UX</span><span>Prototyping</span></div>
+        <p class="proj-note">◆ Physical prototype + full pitch deck &amp; CAD assembly developed for the concept.</p>
+      </div>
+    </article>
+
+    <!-- Clutch mechanism feature -->
+    <article class="proj feat reveal" data-tags="simulation motion-capture rehab">
+      <div class="panel-corners"></div>
+      <div class="proj-media contain">
+        <img src="assets/img/clutch_cad.jpg" alt="Passive clutch mechanism — exploded CAD assembly" loading="lazy" />
+        <span class="media-tag">CAD · EXPLODED ASSEMBLY</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-top"><span class="proj-id">P-05</span><span class="proj-status">◉ PROTOTYPE · SIMULATION</span></div>
+        <h3>Passive Clutch &amp; Cable Routing</h3>
+        <p class="proj-tagline">Posture-assist exo-mechanism for walking</p>
+        <div class="proj-ps">
+          <div class="ps problem"><h5>◇ PROBLEM</h5><p>Powered exoskeletons that assist gait and posture are <strong>heavy, costly and battery-limited</strong>, keeping mobility assistance out of reach for everyday rehab use.</p></div>
+          <div class="ps solution"><h5>◈ SOLUTION</h5><p>A <strong>passive clutch + cable-routing</strong> mechanism (pelvis + thigh brace) that stores and releases energy at the right phase of the gait cycle to assist posture <strong>without motors</strong> — validated in OpenSim across loaded and unloaded walking.</p></div>
+        </div>
+        <p class="proj-desc">
+          The worn prototype pairs a pelvis brace clutch with a thigh brace and posterior
+          spring. In gait testing, the suited knee-flexion profile tracks the baseline
+          closely while redistributing load — evidence the passive assist works without
+          disrupting natural walking.
+        </p>
+        <div class="proj-gallery">
+          <img src="assets/img/clutch_device.jpg" alt="Passive clutch device worn — pelvis and thigh brace" loading="lazy" />
+          <img src="assets/img/clutch_cad2.jpg" alt="Passive clutch mechanism — assembled CAD" loading="lazy" />
+          <img src="assets/img/clutch_knee.jpg" alt="Knee flexion: baseline vs suited gait" loading="lazy" />
+          <img src="assets/img/clutch_test.jpg" alt="Gait test on treadmill with motion capture" loading="lazy" />
+        </div>
+        <div class="proj-tools"><span>OpenSim</span><span>Biomechanics</span><span>Cable Routing</span><span>MATLAB</span><span>Gait Analysis</span></div>
+        <p class="proj-note">◆ Inverse kinematics + CMC / static optimization across load conditions.</p>
+      </div>
+    </article>
+
+    <!-- Retina COMSOL feature -->
+    <article class="proj feat reverse reveal" data-tags="comsol simulation">
+      <div class="panel-corners"></div>
+      <div class="proj-media contain dark">
+        <img src="assets/img/retina_current.jpg" alt="COMSOL current-density field distribution across electrode configurations" loading="lazy" />
+        <span class="media-tag">COMSOL · E-FIELD MAP</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-top"><span class="proj-id">P-06</span><span class="proj-status">◉ FEM · COMSOL</span></div>
+        <h3>Retinal Implant Field Modelling</h3>
+        <p class="proj-tagline">Selective electrode stimulation in COMSOL Multiphysics</p>
+        <div class="proj-ps">
+          <div class="ps problem"><h5>◇ PROBLEM</h5><p>Retinal prostheses must excite target neurons precisely. Poor electrode configuration <strong>spreads current</strong>, blurring artificial vision and risking tissue damage.</p></div>
+          <div class="ps solution"><h5>◈ SOLUTION</h5><p>A COMSOL FEM comparing <strong>monopolar, bipolar, tripolar and hexapolar</strong> arrays across electrode radii — quantifying field confinement, current density and contrast to select the sharpest, safest, most selective configuration.</p></div>
+        </div>
+        <p class="proj-desc">
+          Contrast analysis across retinal layers showed the hexapolar configuration gives
+          the tightest field focus — trading a little leakage for markedly higher spatial
+          selectivity, the key to high-resolution prosthetic vision.
+        </p>
+        <div class="proj-gallery">
+          <img src="assets/img/retina_field.jpg" alt="Electric field norm across electrode configurations" loading="lazy" />
+          <img src="assets/img/retina_config.jpg" alt="Hexapolar electrode configuration field pattern" loading="lazy" />
+        </div>
+        <div class="proj-tools"><span>COMSOL</span><span>FEM</span><span>Bioelectric Fields</span><span>Neural Stimulation</span><span>Contrast Analysis</span></div>
+      </div>
+    </article>
+
+    <!-- Biocompatibility feature (NEW) -->
+    <article class="proj feat reveal" data-tags="research">
+      <div class="panel-corners"></div>
+      <div class="proj-media contain">
+        <img src="assets/img/biocompat_solution.jpg" alt="Bioinformatics-guided dynamic platelet activation platform" loading="lazy" />
+        <span class="media-tag">ISO 10993-4 · HEMOCOMPAT</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-top"><span class="proj-id">P-07</span><span class="proj-status">◉ RESEARCH · STANDARDS</span></div>
+        <h3>Bioinformatics-Guided Platelet Assay</h3>
+        <p class="proj-tagline">Modernising ISO 10993-4 hemocompatibility testing</p>
+        <div class="proj-ps">
+          <div class="ps problem"><h5>◇ PROBLEM</h5><p>Standard ISO 10993-4 platelet-activation testing for blood-contacting devices suffers from <strong>donor variability, static (non-flow) conditions and poor cross-lab standardisation</strong> — making hemocompatibility results hard to reproduce.</p></div>
+          <div class="ps solution"><h5>◈ SOLUTION</h5><p>A three-layer <strong>dynamic platelet activation assay</strong>: microfluidic flow chambers, iPSC-derived reference platelets (low + high-reactivity anchors), and a computational layer that normalises every run into one unitless <strong>Platelet Activation Risk Score</strong>.</p></div>
+        </div>
+        <p class="proj-desc">
+          By anchoring each run to reproducible cell-derived controls and modelling donor,
+          batch, chip and operator effects explicitly, the assay attacks all three failure
+          modes at once — as a standardisation layer over conventional testing.
+        </p>
+        <div class="proj-gallery">
+          <img src="assets/img/biocompat_problem.jpg" alt="Why current ISO 10993-4 testing needs refinement" loading="lazy" />
+          <img src="assets/img/biocompat_controls.jpg" alt="Defining the two reference controls" loading="lazy" />
+        </div>
+        <div class="proj-tools"><span>ISO 10993-4</span><span>Microfluidics</span><span>iPSC Platelets</span><span>Bioinformatics</span><span>Hierarchical Stats</span></div>
+        <p class="proj-note">◆ Evidence-backed modernization pathway for hemocompatibility standardization.</p>
+      </div>
+    </article>
+
+    <div class="proj-row">
+
+      <!-- Biosignal / ventilation -->
+      <article class="proj reveal" data-tags="simulation">
+        <div class="panel-corners"></div>
+        <div class="proj-media compact">
+          <img src="assets/img/biosignal_patient.jpg" alt="Patient physiological time series" loading="lazy" />
+          <span class="media-tag">PHYSIO · TIME SERIES</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-id">P-08</span><span class="proj-status">◉ MODELLING</span></div>
+          <h3>Closed-Loop Ventilation Modelling</h3>
+          <p class="proj-tagline">Biosignal analysis on the PNEUMA physiome</p>
+          <div class="proj-ps">
+            <div class="ps problem"><h5>◇ PROBLEM</h5><p>Mechanical-ventilation control relies on manual clinician tuning, and testing new closed-loop strategies directly <strong>on patients is risky</strong>.</p></div>
+            <div class="ps solution"><h5>◈ SOLUTION</h5><p>Simulate first: on the <strong>PNEUMA</strong> cardiopulmonary model, design and evaluate closed-loop control of rate, pressure, NMB and inspired O₂ with signal filtering and frequency-domain diagnostics across virtual cohorts.</p></div>
+          </div>
+          <div class="proj-tools"><span>Simulink</span><span>MATLAB</span><span>Bode / FFT</span><span>Physiological Modelling</span></div>
+        </div>
+      </article>
+
+      <!-- SPATIAL OS -->
+      <article class="proj reveal" data-tags="systems">
+        <div class="panel-corners"></div>
+        <div class="proj-svg spatial-svg">
+          <div class="spatial-grid"></div>
+          <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-id">P-09</span><span class="proj-status live">◉ R&amp;D · CONCEPT</span></div>
+          <h3>SPATIAL — Coordination OS</h3>
+          <p class="proj-tagline">Spatial awareness &amp; real-time decision support</p>
+          <div class="proj-ps">
+            <div class="ps problem"><h5>◇ PROBLEM</h5><p>In complex clinical and human-device environments, position, movement and task state are tracked in <strong>silos</strong> — so real-time coordination and decision support stay fragmented.</p></div>
+            <div class="ps solution"><h5>◈ SOLUTION</h5><p>A concept operating layer that <strong>fuses spatial positioning, movement and task coordination</strong> into one structured, intelligent system for real-time spatial awareness and decision support.</p></div>
+          </div>
+          <div class="proj-tools"><span>Systems Design</span><span>Spatial Computing</span><span>Human Factors</span><span>Decision Support</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Exosuit Gait Biomechanics -->
+    <article class="proj feat reveal" data-tags="motion-capture simulation rehab">
+      <div class="panel-corners"></div>
+      <div class="proj-media">
+        <video autoplay muted loop playsinline poster="assets/img/mocap_opensim_poster.jpg"><source src="assets/img/mocap_opensim.mp4" type="video/mp4" /></video>
+        <span class="media-tag">MOTION CAPTURE · OPENSIM</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-top"><span class="proj-id">P-10</span><span class="proj-status">◉ MOCAP · BIOMECHANICS</span></div>
+        <h3>Exosuit Gait Biomechanics</h3>
+        <p class="proj-tagline">Motion-capture + OpenSim analysis of a passive exosuit</p>
+        <div class="proj-ps">
+          <div class="ps problem"><h5>◇ PROBLEM</h5><p>Does a passive cable–spring exosuit actually help walking, or just add load? Its effect on posture, coordination, muscle demand and loading <strong>can't be known without measurement</strong>.</p></div>
+          <div class="ps solution"><h5>◈ SOLUTION</h5><p>A <strong>motion-capture + OpenSim</strong> study comparing gait with and without the exosuit — quantifying joint angles, muscle activation, GRF, knee moment and pelvis/COM stability across the gait cycle.</p></div>
+        </div>
+        <div class="proj-gallery">
+          <img src="assets/img/mocap_suit.jpg" alt="Reflective markers and passive cable–spring exosuit" loading="lazy" />
+          <img src="assets/img/mocap_joints.jpg" alt="Right-leg joint angles across the gait cycle" loading="lazy" />
+          <img src="assets/img/mocap_grf.jpg" alt="Vertical GRF and knee moment" loading="lazy" />
+          <img src="assets/img/mocap_muscle.jpg" alt="Right-leg muscle activation" loading="lazy" />
+        </div>
+        <div class="proj-tools"><span>Motion Capture</span><span>OpenSim</span><span>Inverse Kinematics</span><span>Musculoskeletal Modelling</span><span>MATLAB</span><span>Gait Analysis</span></div>
+        <p class="proj-note">◆ EXO vs NO-EXO: reduced gait variability, shifted muscle demand, lower knee-joint loading.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+  <div class="sec-head">
+    <span class="sec-index">03</span>
+    <h2>EXPERIENCE // FIELD LOG</h2>
+    <span class="sec-rule"></span>
+  </div>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-when">Jul 2023 – May 2024</div>
+      <div class="panel tl-card">
+        <div class="panel-corners"></div>
+        <h4>Project Intern — RISE Lab</h4>
+        <p class="tl-org">Indian Institute of Technology Delhi · Delhi, India</p>
+        <p>Biomedical research on prosthetic control, optical myography and assistive technology. Led literature review, experimental documentation, data interpretation and technical communication — feeding directly into a published optical-myography study.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-when">Jan 2023 – May 2023</div>
+      <div class="panel tl-card">
+        <div class="panel-corners"></div>
+        <h4>Research Intern — Human Centered Robotics Lab</h4>
+        <p class="tl-org">Indian Institute of Technology Gandhinagar · India</p>
+        <p>Human-centered robotics research with a focus on assistive and biomedical applications — robotics workflows, experimental planning, technical documentation and interdisciplinary collaboration.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-when">Oct 2021 – Nov 2021</div>
+      <div class="panel tl-card">
+        <div class="panel-corners"></div>
+        <h4>Scientific Content Writer</h4>
+        <p class="tl-org">Bioclinica Biosciences · Visakhapatnam, India</p>
+        <p>Translated complex biotechnology and healthcare concepts into clear scientific and biomedical written material.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-when">Sep 2020 – Dec 2020</div>
+      <div class="panel tl-card">
+        <div class="panel-corners"></div>
+        <h4>Marketing &amp; Technical Intern</h4>
+        <p class="tl-org">LifegenBio · Remote / India</p>
+        <p>Supported technical and marketing work across biotechnology, bioinformatics and scientific communication.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="awards reveal">
+    <h3 class="awards-title">◈ AWARDS &amp; SIGNALS</h3>
+    <div class="awards-grid">
+      <div class="award"><span>2026</span>Presented UniSense at the ABNN Neurosensing &amp; Neuromodulation Symposium.</div>
+      <div class="award"><span>PUB</span>Co-author, markerless optical myography for prosthetic control (2024).</div>
+      <div class="award"><span>LEAD</span>General Secretary &amp; Sports Secretary, Student Council, DYPV.</div>
+      <div class="award"><span>SCI</span>Vertical tube gel electrophoresis for early cancer biomarker detection.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="sec-head">
+    <span class="sec-index">04</span>
+    <h2>SYSTEMS // TOOLKIT</h2>
+    <span class="sec-rule"></span>
+  </div>
+  <div class="skills-grid">
+    <
