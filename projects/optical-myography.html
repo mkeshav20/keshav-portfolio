@@ -54,4 +54,12 @@
   <span class="foot-blink">◉ SYSTEM NOMINAL</span>
 </footer>
 
-<div class="lightbox" id="lightbox"><span class="lb-close"
+<div class="lightbox" id="lightbox"><span class="lb-close">✕</span><img alt=""></div>
+<script src="../js/main.js"></script>
+<script>
+(function(){var lb=document.getElementById('lightbox');var im=lb.querySelector('img');
+document.querySelectorAll('.pd-fig[data-full]').forEach(function(f){f.addEventListener('click',function(){im.src=f.getAttribute('data-full');lb.classList.add('on');});});
+lb.addEventListener('click',function(){lb.classList.remove('on');im.src='';});})();
+</script>
+</body>
+</html>
